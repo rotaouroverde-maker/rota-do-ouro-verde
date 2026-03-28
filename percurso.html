@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Percurso | Rota do Ouro Verde</title>
+  <meta name="description" content="Detalhes do percurso da Rota do Ouro Verde com etapas, fotos e estrutura escalável para novos roteiros." />
+  <meta name="theme-color" content="#111111" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav-shell">
+    <div class="nav container">
+      <a class="brand-wrap" href="index.html" aria-label="Voltar para a home">
+        <img src="assets/logo.png" alt="Logo da Rota do Ouro Verde" class="brand-logo" />
+      </a>
+
+      <button class="menu-toggle">☰</button>
+
+      <ul class="nav-links">
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#percursos">Percursos</a></li>
+        <li><a href="#etapas">Etapas</a></li> </li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+    <div class="hero-content container reveal">
+      <div class="breadcrumbs">
+        <a href="index.html">Início</a>
+        <span>•</span>
+        <span id="route-breadcrumb">Percurso</span>
+      </div>
+      <span class="eyebrow">Detalhes do percurso</span>
+      <h1 id="route-title"></h1>
+      <p id="route-subtitle"></p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container route-summary">
+        <div id="route-summary"></div>
+        <div class="route-cover reveal" id="route-cover"></div>
+      </div>
+    </section>
+
+    <section class="section alt" id="etapas">
+      <div class="container reveal">
+        <div class="section-head">
+          <div>
+            <p class="section-tag">Etapas</p>
+            <h2>Abra cada dia para ver detalhes e fotos</h2>
+          </div>
+        </div>
+        <div class="stage-grid" id="stage-grid">
+          <div class="empty-state">Carregando etapas...</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="apoio">
+      <div class="container reveal">
+        <div id="route-support-section"></div>
+      </div>
+    </section>
+  </main>
+
+    <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-top">
+          <img src="assets/logo-rota-ouro-verde.png" alt="Logo da Rota do Ouro Verde">
+          <h3>Rota do Ouro Verde</h3>
+        </div>
+        <p>Um caminho de natureza, história e conexão na Serra Fluminense.</p>
+      </div>
+
+      <div class="footer-info">
+        <p><strong>Contato oficial:</strong> WhatsApp, Instagram e email disponíveis no site.</p>
+        <p>© 2026 Rota do Ouro Verde. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="stage-modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="stage-title">
+      <button class="modal-close" id="stage-close-btn" aria-label="Fechar">✕</button>
+      <div class="modal-body">
+        <h3 id="stage-title">Etapa</h3>
+        <p class="modal-subtitle" id="stage-subtitle"></p>
+        <div id="stage-content"></div>
+      </div>
+    </div>
+    <div data-stage-close="true" style="position:absolute;inset:0;z-index:-1"></div>
+  </div>
+
+  <div class="modal photo-modal" id="photo-modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="photo-modal-title">
+      <button class="modal-close" id="photo-close-btn" aria-label="Fechar">✕</button>
+      <div class="modal-body">
+        <div class="photo-head">
+          <div>
+            <h3 id="photo-modal-title">Foto</h3>
+            <p id="photo-modal-counter"></p>
+          </div>
+          <div class="photo-nav">
+            <button type="button" id="photo-prev" aria-label="Anterior">←</button>
+            <button type="button" id="photo-next" aria-label="Próxima">→</button>
+          </div>
+        </div>
+        <div class="photo-stage">
+          <img id="photo-modal-image" alt="Foto ampliada do percurso">
+        </div>
+        <div class="photo-thumbs" id="photo-modal-thumbs"></div>
+      </div>
+    </div>
+    <div data-photo-close="true" style="position:absolute;inset:0;z-index:-1"></div>
+  </div>
+
+  <script src="percurso.js"></script>
+</body>
+</html>
