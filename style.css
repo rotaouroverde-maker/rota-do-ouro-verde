@@ -246,6 +246,7 @@ p{color:var(--muted)}
   }
 
   .nav-links.open{display:flex}
+  .nav-links a{white-space: nowrap; /* evita quebrar linha */ }
 
   .intro-grid,.two-col,.footer-grid,.contact-grid,.route-summary,.section-head,.modal-grid{
     grid-template-columns:1fr;
