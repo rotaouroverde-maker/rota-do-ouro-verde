@@ -2,9 +2,27 @@ const toggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
 if (toggle && navLinks) {
-  toggle.addEventListener('click', () => {
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
     const isOpen = navLinks.classList.toggle('open');
     toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  document.addEventListener('click', (e) => {
+    const clicouNoBotao = toggle.contains(e.target);
+    const clicouNoMenu = navLinks.contains(e.target);
+
+    if (!clicouNoBotao && !clicouNoMenu) {
+      navLinks.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
   });
 }
 
