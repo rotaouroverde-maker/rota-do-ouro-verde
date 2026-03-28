@@ -171,7 +171,7 @@ p{color:var(--muted)}
   .section-head{align-items:start}
   .grid-3,.route-grid,.builder-grid,.stage-grid,.stats-grid{grid-template-columns:1fr}
   .hero{min-height:auto}
-  .hero-content{padding:46px 0 74px}
+  .hero-content{padding:150px 0 74px}
   .route-cover{min-height:280px}
   .stage-gallery-grid{grid-template-columns:1fr 1fr}
 }
