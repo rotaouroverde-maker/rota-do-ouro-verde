@@ -178,9 +178,6 @@ p{color:var(--muted)}
   .brand-logo{
     height:56px;
   }
-  brand-wrap{
-    max-width:70%;
-  }
   
   .menu-toggle{
     display:block;
