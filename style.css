@@ -318,3 +318,23 @@ p{color:var(--muted)}
 .route-support .section-head{
   margin-bottom:18px;
 }
+/* === FIX MOBILE NAV OVERFLOW (SEM ALTERAR LAYOUT) === */
+
+@media (max-width: 820px){
+
+  .nav{
+    min-width:0;
+  }
+
+  .brand-wrap{
+    min-width:0;
+    flex:1;
+  }
+
+  .brand-wrap span{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+}
