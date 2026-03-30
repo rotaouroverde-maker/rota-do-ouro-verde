@@ -131,7 +131,44 @@ p{color:var(--muted)}
 .form-feedback{min-height:24px;font-size:.95rem}
 .form-feedback.is-success{color:#147a37}
 .form-feedback.is-error{color:#a52828}
-.contact-list{display:grid;gap:10px;margin-top:20px}
+.contact-list {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background: #f7f6f2;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.contact-list p {
+  margin: 18px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-list strong {
+  font-size: 13px;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.contact-list a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f3d2b;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-list a:hover {
+  color: #d4a017;
+}
+.fa-whatsapp { color: #25D366; }
+.fa-instagram { color: #E1306C; }
+.fa-envelope { color: #555; }
+
 .footer{background:#050505;color:#fff;padding:34px 0;border-top:1px solid rgba(255,255,255,.08)}
 .footer-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:center}
 .footer a{text-decoration:none;color:#fff}
