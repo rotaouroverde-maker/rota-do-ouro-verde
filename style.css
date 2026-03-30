@@ -197,6 +197,47 @@ p{color:var(--muted)}
 .route-support-card h3{margin-bottom:10px}
 #route-support-section:empty{display:none}
 .route-support .section-head{margin-bottom:18px}
+.apoio-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px 36px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 32px;
+  margin: 32px auto 0;
+}
+
+#parceiros h2 {
+  text-align: center;
+}
+
+.partner-logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 180px; /* largura fixa por logo */
+  text-decoration: none;
+  width: 100%;
+}
+
+.partner-logo-link img {
+  max-width: 180px;
+  max-height: 90px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  opacity: 0.9;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.partner-logo-link:hover img,
+.partner-logo-link:focus-visible img {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
 
 @media (max-width: 1024px){
   .route-grid,.builder-grid,.stage-grid{grid-template-columns:repeat(2,1fr)}
