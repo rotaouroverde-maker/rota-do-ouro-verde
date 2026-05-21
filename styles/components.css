@@ -1,0 +1,10 @@
+
+.btn{
+  border-radius:999px;
+  transition:.2s ease;
+}
+
+.card{
+  border-radius:22px;
+  overflow:hidden;
+}

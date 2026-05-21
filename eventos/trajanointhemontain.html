@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rota do Ouro Verde</title>
+
+  <meta name="description" content="Conheça a Rota do Ouro Verde: 89 km de natureza, memória do café, hospitalidade local e experiências autênticas na Serra Fluminense." />
+  <meta name="keywords" content="Rota do Ouro Verde, trilha Serra Fluminense, Trajano de Moraes, ecoturismo RJ, rota do café, trilha de longo curso, turismo de natureza" />
+  <meta name="theme-color" content="#111111" />
+
+  <meta property="og:title" content="Rota do Ouro Verde" />
+  <meta property="og:description" content="89 km de natureza, história do café e experiências autênticas na Serra Fluminense." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="assets/hero.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="icon" href="../favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="128x128" href="../favicon/favicon-128x128.png">
+  <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+
+  <meta name="apple-mobile-web-app-title" content="Rota do Ouro Verde">
+  <link rel="manifest" href="../favicon/site.webmanifest">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+</head>
+
+<body>
+<div id="global-header"></div>
+<header class="hero page-hero unified-page-hero evento-page-hero" id="event-hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content container">
+      <div class="breadcrumbs">
+        <a href="../index.html">Início</a>
+        <span>›</span>
+        <a href="eventos.html">Eventos</a>
+        <span>›</span>
+        <span id="event-breadcrumb">Evento</span>
+      </div>
+
+      <span class="eyebrow" id="event-eyebrow">
+        Evento
+      </span>
+
+      <h1 id="event-title">
+        Carregando evento...
+      </h1>
+
+      <p id="event-subtitle"></p>
+
+      <div class="hero-actions event-hero-actions">
+        <a class="btn btn-primary" href="#inscricao">
+          Fazer inscrição
+        </a>
+
+        <a class="btn btn-secondary" href="eventos.html">
+          Ver outros eventos
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="event-main">
+
+    <section class="section evento-top-section">
+      <div class="container event-detail-grid reveal">
+
+        <article class="card event-panel" id="event-about">
+          <p class="section-tag">
+            Sobre o evento
+          </p>
+
+          <h2>
+            Descrição
+          </h2>
+
+          <p class="lead" id="event-description"></p>
+
+          <div class="event-cta-box">
+            <div class="event-cta-header">
+              <div class="event-cta-icon">
+                📝
+              </div>
+
+              <div class="event-cta-title-group">
+                <h3>
+                  Inscrições abertas
+                </h3>
+
+                <p>
+                  Garanta sua participação no Trajano In The Mountain.
+                </p>
+              </div>
+            </div>
+
+            <div class="event-cta-actions">
+              <a href="#inscricao" class="btn btn-primary btn-inscricao-evento">
+                Realizar inscrição
+              </a>
+            </div>
+          </div>
+
+          <div id="event-long-description"></div>
+
+          <ul class="route-highlights event-highlights" id="event-highlights"></ul>
+        </article>
+
+        <aside class="card event-info-card" id="event-info-card">
+          <p class="section-tag">
+            Informações
+          </p>
+
+          <h3>
+            Resumo do evento
+          </h3>
+
+          <div class="event-info-list" id="event-info-list"></div>
+
+          <a class="btn btn-primary" href="#inscricao">
+            Inscrever-se
+          </a>
+        </aside>
+
+      </div>
+    </section>
+
+    <section class="section alt" id="programacao">
+      <div class="container reveal">
+        <div class="section-head">
+          <div>
+            <p class="section-tag">
+              Programação
+            </p>
+
+            <h2>
+              Palestras e atividades previstas
+            </h2>
+          </div>
+        </div>
+
+        <div class="schedule-list" id="event-schedule"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container reveal">
+
+        <p class="section-tag">
+          Convidados
+        </p>
+
+        <h2>
+          Palestrantes e convidados
+        </h2>
+
+        <div class="speakers-carousel">
+
+          <article
+            class="speaker-slide"
+            data-name="Anderson Pinheiro"
+            data-description="Fundador da Rota do Ouro Verde, guia com experiência em montanha e condução de grupos."
+            data-image="../assets/eventos/trajanointhemontain-2026/palestrantes/anderson.png"
+          >
+            <img src="../assets/eventos/trajanointhemontain-2026/palestrantes/anderson.png" alt="Anderson Pinheiro">
+
+            <div class="speaker-content">
+              <h3>Anderson Pinheiro</h3>
+              <p>Montanhista e fundador da rota</p>
+            </div>
+          </article>
+
+          <article
+            class="speaker-slide"
+            data-name="Maria Costa"
+            data-role="Turismo de Natureza"
+            data-description="Atua no desenvolvimento do ecoturismo e fortalecimento do turismo regional."
+            data-image="../assets/palestrantes/palestrante2.jpg"
+          >
+            <img src="../assets/palestrantes/palestrante2.jpg" alt="Maria Costa">
+
+            <div class="speaker-content">
+              <h3>Maria Costa</h3>
+              <p>Turismo de Natureza</p>
+            </div>
+          </article>
+
+          <article
+            class="speaker-slide"
+            data-name="Carlos Mendes"
+            data-role="Escalador e Instrutor"
+            data-description="Instrutor de escalada esportiva e segurança vertical, com atuação em projetos de formação outdoor."
+            data-image="../assets/palestrantes/palestrante3.jpg"
+          >
+            <img src="../assets/palestrantes/palestrante3.jpg" alt="Carlos Mendes">
+
+            <div class="speaker-content">
+              <h3>Carlos Mendes</h3>
+              <p>Escalador e Instrutor</p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="galeria" hidden style="display:none;">
+      <div class="container reveal">
+        <div class="section-head">
+          <div>
+            <p class="section-tag">
+              Galeria
+            </p>
+
+            <h2>
+              Fotos do evento
+            </h2>
+          </div>
+        </div>
+
+        <div class="gallery-grid" id="event-gallery-grid"></div>
+      </div>
+    </section>
+
+    <span id="inscricao"></span>
+
+    <section class="section alt" id="event-form-section">
+      <div class="container contact-grid reveal">
+
+        <div>
+          <p class="section-tag">
+            Inscrição
+          </p>
+
+          <h2 id="event-form-title">
+            Faça sua inscrição
+          </h2>
+
+          <p class="lead" id="event-form-description">
+            Preencha seus dados para participar do evento.
+          </p>
+
+          <div class="card event-note-card">
+            <h3>
+              Antes de se inscrever
+            </h3>
+
+            <p>
+              Informe dados reais de contato. A organização poderá usar o WhatsApp ou e-mail para confirmar orientações, programação final e detalhes de participação.
+            </p>
+          </div>
+        </div>
+
+        <form
+          id="form-inscricao"
+          class="contact-form js-smart-form"
+          action="https://formspree.io/f/xaqlnvng"
+          method="POST"
+          data-form-action="https://formspree.io/f/xaqlnvng"
+        >
+
+          <h3>
+            Inscrição — Trajano In The Mountain
+          </h3>
+
+          <input
+            type="text"
+            name="_gotcha"
+            style="position:absolute; left:-9999px;"
+            tabindex="-1"
+            autocomplete="off"
+          >
+
+          <label>
+            Nome completo
+            <input type="text" name="nome" required>
+          </label>
+
+          <label>
+            E-mail
+            <input type="email" name="email" required>
+          </label>
+
+          <label>
+            WhatsApp
+            <input type="tel" name="telefone" required>
+          </label>
+
+          <label>
+            Cidade
+            <input type="text" name="cidade">
+          </label>
+
+          <label>
+            Experiência em trilhas
+
+            <select name="experiencia">
+              <option value="Iniciante">Iniciante</option>
+              <option value="Intermediário">Intermediário</option>
+              <option value="Avançado">Avançado</option>
+            </select>
+          </label>
+
+          <div class="radio-field">
+            <p>Tem experiência em escalada?</p>
+
+            <div class="radio-group">
+              <input
+                type="radio"
+                id="escalada-sim"
+                name="experiencia_escalada"
+                value="Sim"
+                required
+              >
+
+              <label for="escalada-sim">
+                Sim
+              </label>
+
+              <input
+                type="radio"
+                id="escalada-nao"
+                name="experiencia_escalada"
+                value="Não"
+              >
+
+              <label for="escalada-nao">
+                Não
+              </label>
+            </div>
+          </div>
+
+          <label>
+            Observações
+
+            <textarea
+              name="mensagem"
+              rows="5"
+              placeholder="Alguma informação importante?"
+            ></textarea>
+          </label>
+
+          <input type="hidden" name="evento" value="Trajano In The Mountain">
+
+          <button class="btn btn-primary" type="submit">
+            Realizar inscrição
+          </button>
+
+          <p class="form-feedback" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+<div class="speaker-modal" id="speaker-modal">
+    <div class="speaker-modal-content">
+
+      <button
+        class="speaker-modal-close"
+        id="speaker-modal-close"
+        aria-label="Fechar modal"
+      >
+        ✕
+      </button>
+
+      <img id="modal-image" src="" alt="">
+
+      <div class="speaker-modal-body">
+        <h2 id="modal-name"></h2>
+        <p id="modal-role"></p>
+        <p id="modal-description"></p>
+      </div>
+
+    </div>
+  </div>
+
+  
+<div id="global-footer"></div>
+
+<script src="../shared/common.js"></script>
+  <script src="trajanointhemontain.js"></script>
+<script type="module" src="../shared/layouts/app.js" data-base="../"></script>
+</body>
+</html>

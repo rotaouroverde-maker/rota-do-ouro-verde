@@ -1,0 +1,21 @@
+/* Componentes reutilizáveis novos.
+   O header e o footer usam as classes originais do projeto:
+   .nav-shell, .nav, .nav-links, .footer, .footer-grid etc.
+*/
+
+.card-default{
+  background:#fff;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 20px 40px rgba(0,0,0,.08);
+}
+
+.card-image img{
+  width:100%;
+  aspect-ratio:16/10;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:24px;
+}
