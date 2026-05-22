@@ -19,3 +19,68 @@
 .card-content{
   padding:24px;
 }
+
+/* =========================
+   EFEITO MENU HOVER
+========================= */
+
+.nav-links a{
+  position:relative;
+  display:inline-block;
+  padding:8px 0;
+  transition:.25s ease;
+}
+
+
+/* LINHA SUPERIOR */
+
+.nav-links a::before{
+  content:'';
+
+  position:absolute;
+
+  left:50%;
+  top:-6px;
+
+  width:0;
+  height:2px;
+
+  background:var(--accent);
+
+  transform:translateX(-50%);
+
+  transition:.3s ease;
+}
+
+
+/* LINHA INFERIOR */
+
+.nav-links a::after{
+  content:'';
+
+  position:absolute;
+
+  left:50%;
+  bottom:-4px;
+
+  width:0;
+  height:2px;
+
+  background:var(--accent);
+
+  transform:translateX(-50%);
+
+  transition:.3s ease;
+}
+
+
+/* HOVER */
+
+.nav-links a:hover::before,
+.nav-links a:hover::after{
+  width:100%;
+}
+
+.nav-links a:hover{
+  color:var(--accent);
+}
