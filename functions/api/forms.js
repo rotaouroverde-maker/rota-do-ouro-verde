@@ -65,7 +65,7 @@ function buildHtml(title,fields){
 function basePayload(data,subject,title,fields){
   return {
     from:'Rota do Ouro Verde <onboarding@resend.dev>',
-    to:['rotaourovede@gmail.com'],
+    to:['rotaouroverde@gmail.com'],
     reply_to:data.email || undefined,
     subject,
     html:buildHtml(title,fields)
