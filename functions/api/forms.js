@@ -64,7 +64,7 @@ function buildHtml(title,fields){
 
 function basePayload(data,subject,title,fields){
   return {
-    from:'Rota do Ouro Verde <contato@rotaouroverde.com.br>',
+    from:'Rota do Ouro Verde <rotaouroverde@gmail.com>',
     to:['contato@rotaouroverde.com.br'],
     reply_to:data.email || undefined,
     subject,
