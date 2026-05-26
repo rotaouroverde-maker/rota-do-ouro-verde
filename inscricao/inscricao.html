@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição | Rota do Ouro Verde</title>
+
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="./inscricao.css">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <meta name="theme-color" content="#111111">
+</head>
+<body>
+
+<div id="global-header"></div>
+<header class="hero inscricao-hero">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content container">
+
+    <div class="breadcrumbs">
+      <a href="../index.html">Início</a>
+      <span>•</span>
+      <a href="../percursos/percursos.html">Percursos</a>
+      <span>•</span>
+      <span>Inscrição</span>
+    </div>
+
+    <span class="eyebrow">
+      INSCRIÇÃO OFICIAL
+    </span>
+
+    <h1 id="route-title">
+      Carregando percurso...
+    </h1>
+
+    <p id="route-description">
+      Aguarde...
+    </p>
+
+    <div class="hero-actions route-hero-actions">
+      <a
+        class="btn btn-secondary"
+        href="../percursos/percursos.html"
+      >
+        Ver outros percursos
+      </a>
+    </div>
+
+  </div>
+
+</header>
+
+<section class="section">
+
+  <div class="container signup-layout">
+
+    <div class="card signup-card">
+
+      <div class="signup-head">
+        <span class="eyebrow">
+          INSCRIÇÃO
+        </span>
+
+        <h2>
+          Dados do participante
+        </h2>
+      </div>
+
+      <form
+        class="signup-form js-smart-form"
+        id="formulario"
+        action="/api/forms"
+        method="POST"
+        data-form-action="/api/forms"
+      >
+
+        <input type="hidden" name="tipo" value="inscricao-trilha">
+
+        <input
+          type="text"
+          name="_gotcha"
+          style="position:absolute; left:-9999px;"
+          tabindex="-1"
+          autocomplete="off"
+        >
+
+        <div class="field-grid trail-dates">
+
+          <label>
+            Data de início da trilha
+
+            <input
+              type="date"
+              id="trail-start"
+              name="data_inicio"
+              required
+            >
+
+            <small class="field-error"></small>
+
+          </label>
+
+          <label>
+            Data final da trilha
+
+            <input
+              type="date"
+              id="trail-end"
+              name="data_fim"
+              required
+            >
+
+            <small class="field-error"></small>
+
+          </label>
+
+        </div>
+
+        <div>
+
+          <label>
+            Percurso selecionado
+
+            <select
+              id="route-select"
+              name="percurso"
+              required
+            >
+              <option value="">
+               Carregando percurso...
+              </option>
+            </select>
+
+          </label>
+
+        </div>
+
+        <div class="field-grid">
+
+          <label>
+            Nome completo
+
+            <input
+              type="text"
+              id="full-name"
+              name="nome"
+              required
+            >
+
+            <small class="field-error"></small>
+
+          </label>
+
+          <label>
+            WhatsApp
+
+            <input
+              type="tel"
+              id="whatsapp"
+              name="whatsapp"
+              required
+            >
+
+            <small class="field-error"></small>
+
+          </label>
+
+        </div>
+
+        <div class="field-grid">
+
+          <label>
+            E-mail
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+            >
+
+            <small class="field-error"></small>
+
+          </label>
+
+          <label>
+            Cidade / Estado
+
+            <input
+              type="text"
+              id="city"
+              name="cidade_estado"
+              required
+            >
+
+            <small class="field-error"></small>
+
+          </label>
+
+        </div>
+
+        <div class="field-grid">
+
+          <label>
+            Contato de emergência
+
+            <input
+              type="text"
+              id="emergency-contact"
+              name="contato_emergencia"
+            >
+
+            <small class="field-error"></small>
+
+          </label>
+
+          <label>
+            Telefone de emergência
+
+            <input
+              type="tel"
+              id="emergency-phone"
+              name="telefone_emergencia"
+            >
+
+            <small class="field-error"></small>
+
+          </label>
+
+        </div>
+
+        <label>
+          Experiência em trilhas
+
+          <select
+            id="experience"
+            name="experiencia"
+            required>
+            <option>Iniciante</option>
+            <option>Intermediário</option>
+            <option>Avançado</option>
+          </select>
+
+        </label>
+
+        <label>
+          Observações
+
+          <textarea
+            rows="5"
+            id="notes"
+            name="observacoes"
+          ></textarea>
+        </label>
+
+        <div class="terms-wrapper">
+
+          <a
+            class="terms-read-btn"
+            href="./termo-responsabilidade-rota-ouro-verde-final.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            Ler Termo de Responsabilidade
+          </a>
+
+          <label class="check-label terms-check">
+
+            <input
+              type="checkbox"
+              id="accept-terms"
+              required
+            >
+
+            <span>
+              Declaro estar apto fisicamente para participar da atividade,
+              ciente dos riscos inerentes ao montanhismo e caminhadas em
+              ambiente natural. Também declaro que li e concordo com o
+              Termo de Responsabilidade.
+            </span>
+
+          </label>
+
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-primary"
+        >
+          Enviar inscrição
+        </button>
+
+      </form>
+
+    </div>
+
+    <aside class="card signup-summary">
+
+      <h3 id="summary-title">
+        Percurso
+      </h3>
+
+      <div class="summary-list">
+
+        <div class="summary-item">
+          <strong>Distância</strong>
+          <span id="summary-distance">--</span>
+        </div>
+
+        <div class="summary-item">
+          <strong>Duração</strong>
+          <span id="summary-duration">--</span>
+        </div>
+
+        <div class="summary-item">
+          <strong>Dificuldade</strong>
+          <span id="summary-difficulty">--</span>
+        </div>
+
+        <div class="summary-item">
+          <strong>Valor</strong>
+          <span id="summary-price">--</span>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </div>
+
+</section>
+
+<script src="./inscricao.js"></script>
+
+<div id="global-footer"></div>
+<script
+  type="module"
+  src="../shared/layouts/app.js"
+  data-base="../"
+></script>
+</body>
+</html>
