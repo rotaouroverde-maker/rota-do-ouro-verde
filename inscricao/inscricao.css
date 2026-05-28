@@ -1,0 +1,237 @@
+/* Página de inscrição
+   Mantém a lógica e o conteúdo da página.
+   Este arquivo agora só ajusta elementos específicos da inscrição,
+   sem sobrescrever header/menu globais do site. */
+
+.inscricao-hero,
+.thanks-hero{
+  min-height:auto;
+}
+
+.inscricao-hero .hero-content,
+.thanks-content{
+  padding-top:180px;
+  padding-bottom:60px;
+}
+
+.signup-head .eyebrow{
+  color:#030303;
+}
+
+.route-hero-actions{
+  margin-top:28px;
+}
+
+.signup-layout{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:28px;
+  align-items:start;
+  margin-top:-40px;
+  position:relative;
+  z-index:5;
+}
+
+.signup-card{
+  padding:40px;
+  border-radius:var(--radius);
+}
+
+.signup-summary{
+  padding:32px;
+  position:sticky;
+  top:120px;
+}
+
+.signup-head{
+  margin-bottom:28px;
+}
+
+.signup-form{
+  display:grid;
+  gap:24px;
+}
+
+.field-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.signup-form label{
+  display:grid;
+  gap:8px;
+  font-weight:600;
+}
+
+.signup-form input,
+.signup-form textarea,
+.signup-form select{
+  width:100%;
+  border:1px solid #d6ddd6;
+  border-radius:14px;
+  padding:16px 18px;
+  font:inherit;
+  background:#fff;
+  transition:border-color .2s ease,box-shadow .2s ease,background .2s ease;
+}
+
+.signup-form input:focus,
+.signup-form textarea:focus,
+.signup-form select:focus{
+  outline:none;
+  border-color:#111;
+  box-shadow:0 0 0 4px rgba(0,0,0,.06);
+}
+
+.summary-list{
+  display:grid;
+  gap:18px;
+  margin-top:24px;
+}
+
+.summary-item{
+  border-bottom:1px solid var(--line);
+  padding-bottom:14px;
+}
+
+.summary-item strong{
+  display:block;
+  font-size:.78rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#777;
+  margin-bottom:6px;
+}
+
+.summary-item span{
+  font-size:1.1rem;
+  font-weight:700;
+}
+
+.terms-wrapper{
+  display:grid;
+  gap:20px;
+}
+
+.terms-read-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 22px;
+  border-radius:999px;
+  background:#111;
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+  width:max-content;
+}
+
+.terms-read-btn:hover{
+  transform:translateY(-1px);
+}
+
+.terms-check{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:14px;
+  align-items:flex-start;
+}
+
+.field-error{
+  display:none;
+  color:#c62828;
+  font-size:.84rem;
+  font-weight:700;
+}
+
+.input-error{
+  border-color:#c62828 !important;
+  background:#fff5f5 !important;
+}
+
+.input-valid{
+  border-color:#2e7d32 !important;
+}
+
+.thanks-logo{
+  width:110px;
+  margin:20px 0 14px;
+}
+
+.thanks-section{
+  margin-top:-40px;
+  position:relative;
+  z-index:5;
+}
+
+.thank-you-card{
+  max-width:860px;
+  margin:0 auto;
+  padding:42px;
+}
+
+.thanks-list{
+  display:grid;
+  gap:16px;
+  margin:28px 0 36px;
+  padding-left:22px;
+}
+
+.thanks-actions{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+@media (max-width:820px){
+
+  .inscricao-hero .hero-content,
+  .thanks-content{
+    padding-top:140px;
+    padding-bottom:40px;
+  }
+
+  .signup-layout{
+    grid-template-columns:1fr;
+    margin-top:-28px;
+  }
+
+  .signup-card,
+  .signup-summary,
+  .thank-you-card{
+    padding:28px;
+  }
+
+  .field-grid{
+    grid-template-columns:1fr;
+  }
+
+  .signup-summary{
+    position:static;
+  }
+
+  .terms-read-btn{
+    width:100%;
+  }
+
+  .thanks-actions{
+    flex-direction:column;
+  }
+
+}
+
+@media (max-width:520px){
+
+  .inscricao-hero .hero-content,
+  .thanks-content{
+    padding-top:132px;
+  }
+
+  .signup-card,
+  .signup-summary,
+  .thank-you-card{
+    padding:24px;
+  }
+
+}

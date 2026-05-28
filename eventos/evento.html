@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rota do Ouro Verde</title>
+
+  <meta name="description" content="Conheça a Rota do Ouro Verde: 89 km de natureza, memória do café, hospitalidade local e experiências autênticas na Serra Fluminense." />
+  <meta name="keywords" content="Rota do Ouro Verde, trilha Serra Fluminense, Trajano de Moraes, ecoturismo RJ, rota do café, trilha de longo curso, turismo de natureza" />
+
+  <meta property="og:title" content="Rota do Ouro Verde" />
+  <meta property="og:description" content="Mais de 100 km de natureza, história do café e experiências autênticas na Serra Fluminense." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="assets/hero.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="icon" href="../favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="128x128" href="../favicon/favicon-128x128.png">
+  <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+
+  <meta name="apple-mobile-web-app-title" content="Rota do Ouro Verde">
+
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <meta name="theme-color" content="#111111">
+</head>
+
+<body>
+
+<div id="global-header"></div>
+
+<header class="hero page-hero unified-page-hero evento-page-hero" id="event-hero">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content container">
+
+    <div class="breadcrumbs">
+      <a href="../index.html">Início</a>
+      <span>•</span>
+      <a href="eventos.html">Eventos</a>
+      <span>•</span>
+      <span id="event-breadcrumb">Evento</span>
+    </div>
+
+    <span class="eyebrow" id="event-eyebrow">
+      Evento
+    </span>
+
+    <h1 id="event-title">
+      Carregando evento...
+    </h1>
+
+    <p id="event-subtitle"></p>
+
+    <div class="hero-actions event-hero-actions">
+
+      <a
+        class="btn btn-primary btn-inscricao-evento"
+        href="#"
+      >
+        Fazer inscrição
+      </a>
+
+      <a class="btn btn-secondary" href="eventos.html">
+        Ver outros eventos
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+<main id="event-main">
+
+  <section class="section evento-top-section">
+
+    <div class="container event-detail-grid reveal">
+
+      <article class="card event-panel" id="event-about">
+
+        <p class="section-tag">
+          Sobre o evento
+        </p>
+
+        <h2>
+          Descrição
+        </h2>
+
+        <p class="lead" id="event-description"></p>
+
+        <div class="event-cta-box">
+
+          <div class="event-cta-header">
+
+            <div class="event-cta-icon">
+              📝
+            </div>
+
+            <div class="event-cta-title-group">
+
+              <h3>
+                Inscrições abertas
+              </h3>
+
+              <p>
+                Garanta sua participação neste evento.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="event-cta-actions">
+
+            <a
+              href="#"
+              class="btn btn-primary btn-inscricao-evento"
+            >
+              Realizar inscrição
+            </a>
+
+          </div>
+
+        </div>
+
+        <div id="event-long-description"></div>
+
+        <ul
+          class="route-highlights event-highlights"
+          id="event-highlights"
+        ></ul>
+
+      </article>
+
+      <aside class="card event-info-card" id="event-info-card">
+
+        <p class="section-tag">
+          Informações
+        </p>
+
+        <h3>
+          Resumo do evento
+        </h3>
+
+        <div class="event-info-list" id="event-info-list"></div>
+
+        <a
+          class="btn btn-primary btn-inscricao-evento"
+          href="#"
+        >
+          Inscrever-se
+        </a>
+
+      </aside>
+
+    </div>
+
+  </section>
+
+  <section class="section alt" id="programacao">
+
+    <div class="container reveal">
+
+      <div class="section-head">
+
+        <div>
+
+          <p class="section-tag">
+            Programação
+          </p>
+
+          <h2>
+            Palestras e atividades previstas
+          </h2>
+
+        </div>
+
+      </div>
+
+      <div class="schedule-list" id="event-schedule"></div>
+
+    </div>
+
+  </section>
+
+  <section class="section">
+
+    <div class="container reveal">
+
+      <p class="section-tag">
+        Convidados
+      </p>
+
+      <h2>
+        Palestrantes e convidados
+      </h2>
+
+      <div class="route-carousel-wrap speaker-carousel-wrap">
+        <button class="route-nav prev" id="speaker-prev" type="button" aria-label="Palestrante anterior">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="speakers-carousel" id="speakers-carousel">
+
+
+        <!-- Palestrantes renderizados dinamicamente por evento.js -->
+      </div>
+
+        <button class="route-nav next" id="speaker-next" type="button" aria-label="Próximo palestrante">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section
+    class="section"
+    id="galeria"
+    hidden
+    style="display:none;"
+  >
+
+    <div class="container reveal">
+
+      <div class="section-head">
+
+        <div>
+
+          <p class="section-tag">
+            Galeria
+          </p>
+
+          <h2>
+            Fotos do evento
+          </h2>
+
+        </div>
+
+      </div>
+
+      <div
+        class="gallery-grid"
+        id="event-gallery-grid"
+      ></div>
+
+    </div>
+
+  </section>
+</main>
+
+<div class="speaker-modal" id="speaker-modal">
+
+  <div class="speaker-modal-content">
+
+    <button
+      class="speaker-modal-close"
+      id="speaker-modal-close"
+      aria-label="Fechar modal"
+    >
+      ✕
+    </button>
+
+    <img id="modal-image" src="" alt="">
+
+    <div class="speaker-modal-body">
+
+      <h2 id="modal-name"></h2>
+
+      <p id="modal-role"></p>
+
+      <p id="modal-description"></p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div id="global-footer"></div>
+
+<script src="../shared/common.js"></script>
+
+<script src="evento.js"></script>
+
+<script
+  type="module"
+  src="../shared/layouts/app.js"
+  data-base="../"
+></script>
+
+</body>
+</html>

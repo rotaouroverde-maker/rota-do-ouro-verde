@@ -1,0 +1,208 @@
+{
+  "brand": {
+    "name": "Rota do Ouro Verde",
+    "whatsapp": "https://wa.me/5522988083118?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20eventos%20da%20Rota%20do%20Ouro%20Verde."
+  },
+  "events": [
+    {
+      "id": "trajano-in-the-mountain",
+      "status": "published",
+      "title": "Trajano In The Mountain",
+      "subtitle": "Montanhismo, natureza, cultura local e integração institucional em Trajano de Moraes.",
+      "badge": "Inscrições abertas",
+      "cover": "assets/eventos/trajano-in-the-mountain-2026/trajano-in-the-mountain.jpeg",
+      "date": "15 e 16 de Agosto de 2026",
+      "time": "Programação oficial",
+      "location": "Trajano Country Clube",
+      "category": "Montanhismo e ecoturismo",
+      "price": "Gratuito",
+      "audience": "Montanhistas, caminhantes, guias, condutores, estudantes, moradores e visitantes interessados em turismo de natureza.",
+      "description": "O Trajano In The Mountain marca o lançamento oficial da Rota do Ouro Verde, uma trilha de longo curso que mistura ecoturismo e montanhismo visando fortalecer o turismo em Trajano de Moraes, valorizando suas trilhas, cachoeiras, paisagens naturais e riquezas da região.",
+      "longDescription": [
+        "A programação incluirá palestras, apresentação da Rota do Ouro Verde, atividades guiadas, ações educativas e momentos voltados ao desenvolvimento do montanhismo regional."
+      ],
+      "highlights": [
+        "Palestras e conversas sobre montanhismo, segurança e turismo sustentável.",
+        "Apresentação da Rota do Ouro Verde e do potencial turístico da região.",
+        "Integração entre participantes, guias, apoiadores, instituições e comunidade local.",
+        "Valorização do patrimônio natural, histórico e cultural de Trajano de Moraes."
+      ],
+      "schedule": [
+        {
+          "day": "Sábado • 15 de Agosto de 2026",
+          "activities": [
+            {
+              "time": "08:00",
+              "title": "Credenciamento e recepção",
+              "description": "Recepção dos participantes, confirmação das inscrições e orientações iniciais."
+            },
+            {
+              "time": "09:00",
+              "title": "Abertura oficial",
+              "description": "Apresentação institucional da Rota do Ouro Verde e abertura do evento."
+            },
+            {
+              "time": "10:00",
+              "title": "Filme de montanha",
+              "description": "Exibição de conteúdo audiovisual sobre montanhismo e natureza."
+            },
+            {
+              "time": "11:00",
+              "title": "Palestra",
+              "description": "Palestra com ..."
+            },
+            {
+              "time": "13:00",
+              "title": "Trilha para a Pedra da Caixa D'água",
+              "description": "Trilha para a montanha mais alta da sede do munícípio"
+            },
+            {
+              "time": "17:00",
+              "title": "Encerramento",
+              "description": "Agradecimentos, considerações finais e próximos passos."
+            }
+          ]
+        },
+        {
+          "day": "Domingo • 16 de Agosto de 2026",
+          "activities": [
+            {
+              "time": "08:00",
+              "title": "Café e integração",
+              "description": "Recepção dos participantes e integração entre visitantes, guias e apoiadores."
+            },
+            {
+              "time": "09:00",
+              "title": "Trilha na Floresta Estadual",
+              "description": "Vivências guiadas, integração e atividades conforme programação final."
+            },
+            {
+              "time": "11:00",
+              "title": "Palestras e painéis técnicos",
+              "description": "Temas ligados a montanhismo, segurança, sustentabilidade e turismo de natureza."
+            },
+            {
+              "time": "13:00",
+              "title": "Palestras e painéis técnicos",
+              "description": "Temas ligados a montanhismo, segurança, sustentabilidade e turismo de natureza."
+            },
+            {
+              "time": "14:00",
+              "title": "Trilha na Pedra da Torre",
+              "description": "Vivências guiadas, integração e atividades conforme programação final."
+            },
+            {
+              "time": "17:00",
+              "title": "Encerramento",
+              "description": "Agradecimentos, considerações finais e próximos passos."
+            }
+          ]
+        }
+      ],
+      "speakers": [
+        {
+          "name": "Anderson",
+          "role": "Palestras, orientações técnicas e apoio institucional",
+          "image": "assets/eventos/trajano-in-the-mountain-2026/palestrantes/anderson.png"
+        },
+        {
+          "name": "Convidados e instituições parceiras",
+          "role": "Palestras, orientações técnicas e apoio institucional"
+        }
+      ],
+      "form": {
+        "title": "Inscrição para o Trajano In The Mountain",
+        "description": "Preencha os dados abaixo para manifestar interesse em participar.",
+        "action": "/api/forms"
+      },
+      "gallery": [
+        "assets/eventos/fotos/foto1.jpg",
+        "assets/eventos/fotos/foto2.jpg",
+        "assets/eventos/fotos/foto3.jpg",
+        "assets/eventos/fotos/foto4.jpg",
+        "assets/eventos/fotos/foto5.jpg",
+        "assets/eventos/fotos/foto6.jpg"
+      ]
+    },
+    {
+      "id": "passarinhando",
+      "status": "hidden",
+      "title": "Trajano In The Mountain",
+      "subtitle": "Montanhismo, natureza, cultura local e integração institucional em Trajano de Moraes.",
+      "badge": "Inscrições abertas",
+      "cover": "assets/eventos/trajano-in-the-mountain-2026/trajano-in-the-mountain.jpeg",
+      "date": "15 e 16 de Agosto de 2026",
+      "time": "Programação oficial",
+      "location": "Trajano Country Clube",
+      "category": "Montanhismo e ecoturismo",
+      "audience": "Montanhistas, caminhantes, guias, condutores, estudantes, moradores e visitantes interessados em turismo de natureza.",
+      "description": "O Trajano In The Mountain marca o lançamento oficial da Rota do Ouro Verde, um novo circuito de ecoturismo e montanhismo que visa fortalecer o turismo em Trajano de Moraes, valorizando suas trilhas, cachoeiras, paisagens naturais e riquezas da região.",
+      "longDescription": [
+        "A proposta do evento é apresentar Trajano de Moraes como um destino de referência para o turismo de natureza, com atenção à segurança, sustentabilidade, preservação ambiental e valorização da cultura local.",
+        "A programação poderá incluir palestras, rodas de conversa, apresentação da Rota do Ouro Verde, atividades guiadas, ações educativas e momentos voltados ao desenvolvimento do montanhismo regional."
+      ],
+      "highlights": [
+        "Palestras e conversas sobre montanhismo, segurança e turismo sustentável.",
+        "Apresentação da Rota do Ouro Verde e do potencial turístico da região.",
+        "Integração entre participantes, guias, apoiadores, instituições e comunidade local.",
+        "Valorização do patrimônio natural, histórico e cultural de Trajano de Moraes."
+      ],
+      "schedule": [
+        {
+          "day": "Sábado • 15 de Agosto de 2026",
+          "activities": [
+            {
+              "time": "08:00",
+              "title": "Credenciamento e recepção",
+              "description": "Recepção dos participantes, confirmação das inscrições e orientações iniciais."
+            },
+            {
+              "time": "09:00",
+              "title": "Abertura oficial",
+              "description": "Apresentação institucional da Rota do Ouro Verde e abertura do evento."
+            },
+            {
+              "time": "10:00",
+              "title": "Filme de montanha",
+              "description": "Exibição de conteúdo audiovisual sobre montanhismo e natureza."
+            },
+            {
+              "time": "11:00",
+              "title": "Palestra",
+              "description": "Palestra com ..."
+            },
+            {
+              "time": "13:00",
+              "title": "Trilha para a Pedra da Caixa D'água",
+              "description": "Trilha para a montanha mais alta da sede do munícípio"
+            },
+            {
+              "time": "17:00",
+              "title": "Encerramento",
+              "description": "Agradecimentos, considerações finais e próximos passos."
+            }
+          ]
+        }
+      ],
+      "speakers": [
+        {
+          "name": "Convidados e instituições parceiras",
+          "role": "Palestras, orientações técnicas e apoio institucional"
+        }
+      ],
+      "form": {
+        "title": "Inscrição para o Trajano In The Mountain",
+        "description": "Preencha os dados abaixo para manifestar interesse em participar.",
+        "action": "/api/forms"
+      },
+      "gallery": [
+        "assets/eventos/trajano-in-the-mountain-2026/palestrantes/anderson.png",
+        "assets/eventos/fotos/foto2.jpg",
+        "assets/eventos/fotos/foto3.jpg",
+        "assets/eventos/fotos/foto4.jpg",
+        "assets/eventos/fotos/foto5.jpg",
+        "assets/eventos/fotos/foto6.jpg"
+      ]
+    }
+  ]
+}
