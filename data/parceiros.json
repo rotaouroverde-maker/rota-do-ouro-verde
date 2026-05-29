@@ -1,7 +1,12 @@
 [
   {
     "name": "Refufio das aguas",
-    "logo": "assets/parceiros/refugio.jpeg",
+    "logo": "assets/parceiros/refugio.webp",
     "url": "https://www.instagram.com/sitiorefugiodasaguas/"
+  },
+  {
+    "name": "Ballon Coffee",
+    "logo": "assets/parceiros/balloon.webp",
+    "url": "https://www.instagram.com/ballooncoffee_/"
   }
 ]
