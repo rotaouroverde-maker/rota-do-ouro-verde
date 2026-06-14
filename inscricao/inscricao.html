@@ -238,10 +238,20 @@
           <select
             id="experience"
             name="experiencia"
-            required>
-            <option>Iniciante</option>
-            <option>Intermediário</option>
-            <option>Avançado</option>
+            required
+          >
+            <option value="">
+              Selecione
+            </option>
+            <option value="Iniciante">
+              Iniciante
+            </option>
+            <option value="Intermediário">
+              Intermediário
+            </option>
+            <option value="Avançado">
+              Avançado
+            </option>
           </select>
 
         </label>
@@ -274,6 +284,78 @@
               Não
             </label>
           </div>
+        </div>
+
+        <div class="radio-field js-event-only" hidden>
+          <p>
+            Vai fazer alguma trilha?
+          </p>
+
+          <div class="radio-group">
+            <input
+              type="radio"
+              id="trilha-sim"
+              name="vai_trilha"
+              value="Sim"
+            >
+
+            <label for="trilha-sim">
+              Sim
+            </label>
+
+            <input
+              type="radio"
+              id="trilha-nao"
+              name="vai_trilha"
+              value="Não"
+              checked
+            >
+
+            <label for="trilha-nao">
+              Não
+            </label>
+          </div>
+        </div>
+
+        <div
+          id="opcoes-trilha"
+          class="field-grid js-event-only"
+          hidden
+        >
+          <label>
+            Nascer do Sol
+
+            <select
+              id="nascer-sol"
+              name="nascer_sol"
+            >
+              <option value="Não" selected>
+                Não participar
+              </option>
+              <option value="Pedra da Torre">
+                Pedra da Torre
+              </option>
+              <option value="Pedra da Caixa D'Água">
+                Pedra da Caixa D'Água
+              </option>
+            </select>
+          </label>
+
+          <label>
+            Pôr do Sol
+
+            <select
+              id="nascer-sol"
+              name="nascer_sol"
+            >
+              <option value="Não" selected>
+                Não participar
+              </option>
+              <option value="Pedra da Torre">
+                Pedra da Torre
+              </option>
+            </select>
+          </label>
         </div>
 
         <label>
