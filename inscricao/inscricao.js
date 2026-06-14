@@ -475,3 +475,30 @@ if (form) {
     }
   });
 }
+
+const trilhaSim = document.getElementById('trilha-sim');
+const trilhaNao = document.getElementById('trilha-nao');
+const opcoesTrilha = document.getElementById('opcoes-trilha');
+const nascerSol = document.getElementById('nascer-sol');
+
+function atualizarTrilhas() {
+  if (!trilhaSim || !opcoesTrilha) {
+    return;
+  }
+
+  const mostrar = trilhaSim.checked;
+
+  opcoesTrilha.hidden = !mostrar;
+  opcoesTrilha.style.display = mostrar ? '' : 'none';
+
+  if (!mostrar && nascerSol) {
+    nascerSol.value = 'Não';
+  }
+}
+
+if (trilhaSim && trilhaNao && opcoesTrilha) {
+  trilhaSim.addEventListener('change', atualizarTrilhas);
+  trilhaNao.addEventListener('change', atualizarTrilhas);
+
+  atualizarTrilhas();
+}
